@@ -1,4 +1,4 @@
-// Libraries 
+// Libraries
 import { Link } from "react-router-dom";
 
 // Components
@@ -34,18 +34,20 @@ export default function HomePage() {
       </MainFieldContainer>
 
       <BarContainer>
-        <Link to={'/newinput'}>
+        <Link to={"/newinput"}>
           <OperationsButton>
             <img src={addOperation} alt="add Input" />
             New <br />
             Input
           </OperationsButton>
         </Link>
-        <OperationsButton>
-          <img src={removeOperation} alt="remove Input" />
-          New <br />
-          Output
-        </OperationsButton>
+        <Link to={"/newoutput"}>
+          <OperationsButton>
+            <img src={removeOperation} alt="remove Input" />
+            New <br />
+            Output
+          </OperationsButton>
+        </Link>
       </BarContainer>
     </Container>
   );

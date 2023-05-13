@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import HomePage from "./pages/HomePage/HomePage";
 import NewInputPage from "./pages/NewInputPage/NewInputPage";
+import NewOutputPage from "./pages/NewOutputPage/NewOutputPage";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/newinput" element={<NewInputPage />} />
+        <Route path="/newoutput" element={<NewOutputPage />} />
       </Routes>
     </BrowserRouter>
    </>
