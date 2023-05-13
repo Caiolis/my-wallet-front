@@ -1,5 +1,13 @@
+// Libraries 
+import { Link } from "react-router-dom";
+
 // Components
-import { Container, BarContainer, MainFieldContainer, OperationsButton } from "./styled";
+import {
+  Container,
+  BarContainer,
+  MainFieldContainer,
+  OperationsButton,
+} from "./styled";
 import PageTitle from "../../components/PageTitle/PageTitle";
 
 // Others
@@ -18,18 +26,25 @@ export default function HomePage() {
       </BarContainer>
 
       <MainFieldContainer>
-        <h2>There is no log of<br/>
-        outputs or inputs</h2>
+        <h2>
+          There is no log of
+          <br />
+          outputs or inputs
+        </h2>
       </MainFieldContainer>
 
       <BarContainer>
-        <OperationsButton>
-          <img src={addOperation} alt="add Input" />
-          New <br/>Input
-        </OperationsButton>
+        <Link to={'/newinput'}>
+          <OperationsButton>
+            <img src={addOperation} alt="add Input" />
+            New <br />
+            Input
+          </OperationsButton>
+        </Link>
         <OperationsButton>
           <img src={removeOperation} alt="remove Input" />
-          New <br/>Output
+          New <br />
+          Output
         </OperationsButton>
       </BarContainer>
     </Container>
